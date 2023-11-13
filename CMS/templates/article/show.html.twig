@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	{# {% 
+				    if user.isLoggedIn
+				%}
+				
+					Hello
+					{{ user.name }}
+				
+				{% endif %} #}
+
+	<p>
+		Article about
+		{{title}}
+	</p>
+	<div class="container">
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam similique, sequi debitis dolores ipsum possimus perspiciatis quia cumque quisquam a accusantium recusandae blanditiis in obcaecati sed. Quidem sequi porro facilis repellat sed beatae voluptate. Assumenda repellat laudantium quia consectetur non neque omnis maiores ab aliquid necessitatibus deserunt error, similique dicta!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error aliquid ut exercitationem assumenda? Repudiandae, facilis laboriosam reprehenderit sit ipsa illum, libero aliquid quae quis impedit nemo quo sed sunt mollitia labore iste blanditiis qui neque. Voluptatum iste vero recusandae autem temporibus, iusto quam nostrum rerum vel ipsum reiciendis provident iure modi assumenda, deserunt maxime quibusdam. Incidunt officiis velit placeat voluptatem sapiente explicabo! Harum blanditiis totam enim officia optio dolorem omnis fuga iusto dolor veritatis, doloremque unde alias voluptates ad, impedit doloribus ea iste fugiat officiis voluptatum sunt libero. Consectetur nihil delectus obcaecati quod cumque, provident, libero minus asperiores deleniti beatae reiciendis, eos repellat fugiat. Ducimus laboriosam possimus provident magnam eligendi hic quibusdam, officiis incidunt facere beatae autem at, aliquam, itaque eos rem corporis quasi? Quam delectus incidunt est consequatur necessitatibus repellendus, soluta, pariatur qui nam cum quisquam ducimus voluptas eum commodi sint consequuntur provident ut harum dolor. Sequi esse tempora enim error porro harum ut assumenda recusandae soluta, cum quasi ipsam mollitia, temporibus adipisci fugit nulla eaque quo aspernatur obcaecati sit cupiditate earum excepturi sunt! Sequi ut vel ducimus maiores accusamus quod libero non quas quisquam nobis omnis eligendi beatae veritatis velit reprehenderit, nesciunt illo iure fuga delectus obcaecati, accusantium voluptatum quam. Ducimus voluptas soluta in voluptate corporis, animi dolorum ex. Dolorum voluptates aliquid eaque optio illo similique tenetur doloremque! Maiores praesentium id facere. Eos exercitationem tempore molestias laborum facilis fugiat. Consequatur reiciendis temporibus, distinctio doloribus atque corporis fugit quaerat laudantium repellendus necessitatibus sequi, aperiam, laborum id voluptas magni placeat vel deserunt ullam nisi. Saepe sequi mollitia accusamus quod, optio magnam odit natus illum non. Cumque, qui. Consequatur quo aut sunt animi rem velit rerum doloremque maiores eos quae accusamus, dolorem voluptate corrupti? Temporibus optio unde error quae praesentium veniam aliquid, ducimus officia assumenda, recusandae modi sequi omnis! Voluptates dolorem exercitationem eos molestias. Error libero quod praesentium esse nisi architecto, atque mollitia obcaecati quis quia nemo consequuntur vel dolor itaque recusandae, distinctio suscipit deleniti eos fugiat possimus officiis corrupti dolore! Ea, itaque perferendis exercitationem vero harum rem velit quas, culpa hic excepturi sequi earum! Officia animi excepturi voluptate sint dolorem fuga reprehenderit suscipit nihil eaque maxime nulla blanditiis impedit cupiditate corrupti, unde sapiente in consequuntur ipsum doloremque. Quasi delectus alias amet magnam dicta voluptatem optio quae eius adipisci. Voluptate commodi non ducimus error optio repudiandae neque voluptatem libero dignissimos, sed distinctio accusamus suscipit nemo corporis, delectus quis. Nihil, nesciunt eaque.
+	</div>
+
+
+	<p>Comments</p>
+	<ul>
+		{% for comment in comments %}
+			<li>{{comment.title}}
+				--
+				{{comment.short_description}}</li>
+		{% endfor %}
+	</ul>
+{% endblock %}
+{# {% block title %}
+	Not the Zoo! --
+	{{ parent()}}
+{% endblock %}
+#}
+{# this is a comment #}
